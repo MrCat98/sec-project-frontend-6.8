@@ -21,7 +21,7 @@
 @font-face{
     font-family: "TT Lakes";
     src: url(./font/TTLakes-Regular.woff);
-    font-weight:300;
+    font-weight:400;
 }
 
 body{
@@ -35,7 +35,6 @@ font-family: "TT Lakes";
 .web-page{
     width:100%;
     height: auto;
-    display: block;
 }
 
 h1{
@@ -51,6 +50,7 @@ p{
     font-size: 14px;
     line-height: 18px;
     letter-spacing:0.2px;
+    overflow: hidden;
 }
 
 
@@ -123,6 +123,10 @@ p{
     padding-left:12px ;
 }
 
+.content__text{
+    width: 100%;
+    height: auto;
+}
 
 .content__text--Description{
     width: 288px;
@@ -167,6 +171,14 @@ label{
     }
     body{
         max-width: 769px;
+        font-family: "TT Lakes";
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0,2px;
     }
 .navigation{
     display:flex;
@@ -183,7 +195,7 @@ label{
 }
 
 .content{
-    max-width: 100%;
+    width:100%;
     height:auto;
     display:flex;
     
@@ -194,5 +206,13 @@ label{
     width: 100%;
     height: auto;
 }
+
+.content__text{
+    display:flex;
+    width:312px;
+    height:208px;
+    overflow: hidden;
+}
+
 
 }
