@@ -74,7 +74,7 @@ a{
 
 
 
-.navigation__seting--all{
+.navigation__setting--all{
     margin-right:16px;
 }
 
@@ -112,20 +112,33 @@ h1{
     gap: 16px;
     margin:24px 16px;
 }
+.service:hover,
+.service:focus{
+    background-color: white;
+    outline: none;
+    color:#7e7e82;
+}
 
 .service{
     display:flex;
     width: 246px;
     height: 40px;
     border: 2px solid #b8ffec;
-    background-color: #ffffff;
     white-space: nowrap;
     align-items: center;
     justify-content: center;
     margin-left:10px;
+    transition: background-color 200ms ease,
+    color 200ms ease;
 }
 
       /*text*/
+
+.content__text--Description{
+    display: block;
+    min-width: 288px;
+    min-height: 90px;
+}
 
 .content__text--Description{
     display: flex;
@@ -143,7 +156,7 @@ h1{
 
 .container-img{
     display: flex;
-    max-width:320px;
+    min-width:320px;
     height: 176px;
 }
 
@@ -160,11 +173,7 @@ h1{
     display: none;
  }
 
-.content__text--Description{
-    display: block;
-    max-width: 288px;
-    max-height: 90px;
-}
+
 
 
 
@@ -207,6 +216,12 @@ h1{
         margin-top:40px ;
     }
 
+    .content__text--Description{
+    display: block;
+    min-width: 312px;
+    min-height: 160px;
+}
+
     .content__text--Description--next{
         margin-top:110px;
     }
@@ -232,5 +247,78 @@ h1{
     }
 }
 /*desktop*/
-@media (max-width:1120px) {
+@media (min-width:1120px) {
+   
+    .web-page{
+        width:1120px;
+        height:535px;
+        background-color: #f8f8f8;
+    }
+   
+    .navigation{
+    display: flex;
+        min-width: 1120px;
+    }
+    .full-body{
+        min-width:1120px;   
+    }
+
+    .content{
+        display: inline-flex;
+    }
+
+    .container-text{
+        width: 490px;
+        height: 160px;
+
+    }
+
+    .content__text--Description--next{
+        margin-top:110px;
+    }
+
+    .container-img{
+        display: flex;
+        width: 531.35px;
+        height: 383.24px;
+        margin: 0;
+    }
+
+    .content__img{
+        width:100%;
+    }
+
+    .add-text{
+        display: inline-flex;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing:-0.2px;
+    }
+
+    .add{
+        width: 168px;
+        height: 40px;
+        background-color: #f8f8f8;
+    }
+    
+
+/*display none*/
+
+    .first-free{
+        display: none;
+    }
+
+    .second-free{
+        display: none;
+    }
+
+    .container-add{
+      display: none;
+    }
+   
+    .header{
+        display: none;
+    }
 }
