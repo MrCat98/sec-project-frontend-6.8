@@ -23,8 +23,9 @@
     src: url(./font/TTLakes-Regular.woff);
     font-weight:400;
 }
+    /* text style*/
  body{
-    min-width: 320px;
+    max-width: 760px;
     margin: 0;
     padding: 0; 
     font-family: "TT Lakes";
@@ -42,18 +43,119 @@
     letter-spacing:0.2px;
  }
 
- label{
+ button{
+    background-color: white;
+    border: none ;
     font-weight:500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
  }
 
+a{
+    color: #7e7e82;
+    text-decoration: none;
+    font-weight:500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+    /*heder style*/
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 320px;
+    max-height: 88px;
+    padding: 16px 8px;
+    border: none;
+}
+
+.navigation__logo--main{
+    
+}
+
+
+.navigation__seting--all{
+    margin-right:16px;
+}
+
+.second-free{
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    margin-top:6px;
+}
+
+
+
+       /*body*/
+
+.full-body{
+    min-width:320px;
+    min-height:509px;
+    background-color: #f8f8f8;
+    padding-top:24px ;
+}
+
+h1{
+    display: flex;
+    width: 304px;
+    height: 40px;
+    border-left:4px solid #41f6d7;
+    padding-left:12px;
+}
+
+.list__service{
+    display:flex;
+    overflow: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+    gap: 16px;
+    margin:24px 16px;
+}
+
+.service{
+    display:flex;
+    width: 246px;
+    height: 40px;
+    border: 2px solid #b8ffec;
+    background-color: #ffffff;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-left:10px;
+}
+
+      /*text*/
+
+.content__text--Description{
+    display: flex;
+    color: #1b1c21;
+    margin:0px 16px 16px 16px;
+}
+
+.content__text--Description--next{
+    background-color: #f8f8f8;
+    display: flex;
+    gap:8px;
+    margin: 16px 16px;
+}
+      /*img*/
+
+.container-img{
+    display: flex;
+    max-width:320px;
+    height: 176px;
+}
+
+/*mobail first*/
  .add-text{
     display: none;
  }
 
- .free-1{
+ .first-free{
     display: none;
  }
 
@@ -62,24 +164,76 @@
  }
 
 .content__text--Description{
-    display: flex;
+    display: block;
     max-width: 288px;
     max-height: 90px;
 }
 
-.first-text{
-    display: block;
+
+
+.table-display {
+  display: none;
 }
 
-.second-text .third-text{
-   overflow: hidden;
+.desktop-display{
+    display: none;
 }
+
+
 
 
 /*pad*/
-@media (max-width:430px)
-{
+@media screen and (min-width:768px){
+    .navigation{
+        min-width: 769px;
+        max-height: 88px;
+    }
+    .full-body{
+        min-width:769px;
+        min-height:416px;   
+    }
+    .table-display{
+        display:inline-flex;
+    }
+
+    .container-text{
+        display:inline;
+        width: 312px;
+        height: 160px;
+
+    }
+
+    .content{
+        display: flex;
+        width:100%;
+        height: auto;
+        margin-top:40px ;
+    }
+
+    .content__text--Description--next{
+        margin-top:110px;
+    }
+
+    .container-img{
+        display: flex;
+        width: 360px;
+        height: 208px;
+        margin-left:80px;
+    }
+
+    .first-free{
+        display: block;
+        width:2px;
+        height: 32px;
+        background-color: #eaeaea;
+    }
+
+    .container-add{
+        display: flex;
+        margin-left:170px;
+        gap: 16px;
+    }
 }
-/**/
+/*desktop*/
 @media (max-width:1120px) {
 }
