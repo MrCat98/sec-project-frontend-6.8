@@ -90,8 +90,8 @@ a{
        /*body*/
 
 .full-body{
-    min-width:320px;
-    min-height:509px;
+    max-width:1120px;
+    max-height:auto;
     background-color: #f8f8f8;
     padding-top:24px ;
 }
