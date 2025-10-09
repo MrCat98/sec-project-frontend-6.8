@@ -193,6 +193,7 @@ h1{
     .full-body{
         min-width:769px;
         min-height:416px;   
+        
     }
     .table-display{
         display:inline-flex;
@@ -206,9 +207,9 @@ h1{
     }
 
     .content{
-        display: flex;
-        min-width:720px;
-        height: 208px;
+        display:inline-flex;
+        max-width:720px;
+        max-height: 208px;
         margin-top:32px;
         justify-content: space-between;
     }
