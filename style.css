@@ -226,7 +226,7 @@ h1{
 
     .container-img{
         display: flex;
-        max-width:531.35px;
+        max-width:360px;
         height: auto;
 
     }
@@ -318,7 +318,7 @@ body{
    
 
 .container-img{
-    display:flex;
+    display:flex
     width:531.35px;
     height:307px;
 
