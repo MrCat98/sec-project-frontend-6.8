@@ -38,6 +38,7 @@
     letter-spacing: -0.6px;
  }
  span{
+    font-family: "TT lakes";
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -62,12 +63,13 @@ a{
     letter-spacing: -0.2px;
 }
 
+
+
 /*all style*/
 
-.text-container{
-    pading
+.content{
+    padding:16px;
 }
-
 
 .web-page{
     display: flex;
@@ -106,6 +108,7 @@ a{
     overflow-x:auto;
     scrollbar-width: none;
     margin-left:16px;
+    padding: 0;
 }
 
 .list__service--button{
@@ -135,16 +138,18 @@ a{
     margin:16px;
 }
 
-.content__mobail-text{
-    display: flex;
-    margin-top:23px;
-}
-
 .content__button--next{
     display: flex;
-    margin-bottom:16px;
+    margin:16px;
     background-color: #f8f8f8;
+    font-family: "TT Lakes";
+    font-weight:500;
+    font-size: 16px;
+    line-height:24px;
+    letter-spacing:-0.2px;
+    
 }
+
 
 .title{
     display: flex;
@@ -207,8 +212,6 @@ a{
 
     .content{
         display: flex;
-        margin-top:32px;
-        margin-left:24px;
     }
 
     .content__img{
@@ -220,7 +223,7 @@ a{
         display: flex;
         margin: 0;
     }
-    /*display none*/
+/*display none*/
     .content__table-display{
         display: block;
     }
