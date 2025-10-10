@@ -9,50 +9,52 @@
 <body>
     <!--- mobail version-->
     <div class='web-page'>
-        <nav class="container">
+        <header>
+            <nav class="container">
+                <button class="header__navigation">
+                <img class="navigation__main--img" src="./img/menu.svg" alt="menu">
+                </button>
 
-            <button class="header__navigation">
-               <img class="navigation__main--img" src="./img/menu.svg" alt="menu">
-            </button>
+                <div class="line first-gray-line">
 
-            <div class="line first-gray-line">
-            </div>
-                    
-            <img class="header__navigation--logo" src="./img/label.png" alt="cps">
+                </div>
+                        
+                <img class="header__navigation--logo" src="./img/label.png" alt="cps">
+                
+                <div class="navigation__add--container">
+                    <button class="navigation--add">
+                        <img src="./img/call.svg" alt="call">
+                    </button>
+
+                    <button class="navigation--add">
+                        <img src="./img/chat.svg" alt="chat">
+                    </button>
+
+                    <button class="navigation--add">
+                        <img  src="./img/profile.svg" alt="profile">
+                    </button>
+                </div>
+                
+                <div class="line second-gray-line">
+
+                </div>
+
+                <div class="add-button">  
+                    <button class="add-header__navigation">
+                        <span class="add-button-text">Оставить заявку</span>
+                        <img class="navigation__seting--img" src="./img/seting.svg" alt="seting">
+                    </button>
+
+                    <button class="add-header__navigation" id="find-button">
+                        <span class="add-button-text">Статус ремонта</span>
+                        <img class="navigation__find--img" src="./img/search.svg" alt="find">
+                    </button>
+                </div> 
+                        
+            </nav> 
             
-            <div class="navigation__add--container">
-                <button class="navigation--add">
-                    <img src="./img/call.svg" alt="call">
-                </button>
-
-                <button class="navigation--add">
-                    <img src="./img/chat.svg" alt="chat">
-                </button>
-
-                <button class="navigation--add">
-                    <img  src="./img/profile.svg" alt="profile">
-                </button>
-            </div>
-            <div class="line second-gray-line">
-            </div>
-            <div class="add-button">  
-                <button class="add-header__navigation">
-                    <img class="navigation__seting--img" src="./img/seting.svg" alt="seting">
-                </button>
-
-                <button class="add-header__navigation" id="find-button">
-                    <img class="navigation__find--img" src="./img/search.svg" alt="find">
-                </button>
-            </div> 
-            
-            </div>
-
-            <div class="add-button-text"> 
-                <span class="add-text">Оставить заявку</span>
-                <span class="add-text">Статус ремонта</span>
-                    <h1 class="title">Услуги и сервисы</h1>
-            </div>    
-        </nav>          
+            <h1 class="title">Услуги и сервисы</h1>
+        </header>
         <section class="body">
             <div class="list__service">
                 <a href="./*" class="list__service--button">Ремонтируемые устройства</a>

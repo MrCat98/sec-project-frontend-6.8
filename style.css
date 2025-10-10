@@ -61,11 +61,19 @@ a{
     line-height: 24px;
     letter-spacing: -0.2px;
 }
+
 /*all style*/
+
+.text-container{
+    pading
+}
+
+
 .web-page{
     display: flex;
     min-width:320px;
     min-height: auto;
+    flex-direction: column;
 }
 
 .line{
@@ -89,6 +97,7 @@ a{
     display: flex;
     justify-content: flex-end;
     flex:1;
+    gap: 16px;
 }
 
 .list__service{
@@ -101,15 +110,18 @@ a{
 
 .list__service--button{
     display: flex;
-    flex-shrink:0;
     padding:6px;
+    border-radius:6px;
+    border: 2px solid transparent;
+    white-space: nowrap;
 }
 
 .list__service--button:hover,
 .list__service--button:focus{
     background-color: white;
     border-radius:6px;
-    border: 2px solid #b8ffec;
+    border-color:#b8ffec;
+    padding: 6px;
 }
 
 .second-gray-line{
@@ -156,10 +168,9 @@ a{
 /*display none*/
 .first-gray-line,
 .navigation--add,
-.add-text{
+.add-button-text{
     display: none;
 }
-
 .content__table-display,
 .content__desktop-display{
     display: none;
@@ -175,7 +186,7 @@ a{
     .second-gray-line{
     display: flex;
 
-}
+    }
 
     .navigation--add{
         display: flex;
@@ -191,7 +202,7 @@ a{
     .add-button{
     display: flex;
     justify-content: flex-end;
-}
+    }
 
 
     .content{
@@ -209,7 +220,7 @@ a{
         display: flex;
         margin: 0;
     }
-
+    /*display none*/
     .content__table-display{
         display: block;
     }
@@ -218,20 +229,83 @@ a{
         margin-top:10px;
     }
   
+    .add-button-text{
+    display: none;
+    }
+
+
 }
 /*desktop*/
 @media (min-width:1120px) {
    
 
-.add-text{
-    display: flex;
-}
+    .add-button{
+        padding-right: 36px;
+    }
+        
+    .add-button-text{
+        display: flex;
+        
+    }
 
-.navigation__add--container,
-.header__navigation,
-.header__navigation--logo,
-.line{
-    display: none;
-}
+    .add-header__navigation{
+        display: inline-flex;
+        align-items: center;
+        gap:8px;
+    }
+
+    .list__service{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    header{
+        display: inline-flex;
+        flex-direction: row-reverse;
+
+    }
+
+    .title{
+        display: inline-flex;
+        white-space: nowrap;
+        margin-top: 30px;
+    }
+
+    .container{
+        background-color: #f8f8f8;
+
+    }
+
+    button{
+        background-color: #f8f8f8;
+    }
+
+
+    .content__desktop-display{
+        display: block;
+    }
+
+    .content{
+        display: flex;
+        padding:16.22px;
+        gap:36px;
+    }
+
+    .content__img{
+        width: 50%;
+    }
+    /*display none*/
+
+    .content__mobail-text{
+        margin: 0;
+    }
+
+    .navigation__add--container,
+    .header__navigation,
+    .header__navigation--logo,
+    .line{
+        display: none;
+    }
     
 }
